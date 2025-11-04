@@ -137,11 +137,13 @@
     </Container>
     <Component class="javax.swing.JLabel" name="lblImagen">
       <Properties>
-        <Property name="text" type="java.lang.String" value="jLabel1"/>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/img/q.png"/>
+        </Property>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="400" y="60" width="120" height="30"/>
+          <AbsoluteConstraints x="380" y="60" width="140" height="110"/>
         </Constraint>
       </Constraints>
     </Component>

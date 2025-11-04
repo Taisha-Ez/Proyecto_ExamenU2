@@ -249,8 +249,8 @@ public class Ventana_principal_invetario extends javax.swing.JFrame {
 
         getContentPane().add(panelColor, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 460, 140, 110));
 
-        lblImagen.setText("jLabel1");
-        getContentPane().add(lblImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 60, 120, 30));
+        lblImagen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/q.png"))); // NOI18N
+        getContentPane().add(lblImagen, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 60, 140, 110));
 
         tablaarticulo.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
