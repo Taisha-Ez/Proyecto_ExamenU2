@@ -20,6 +20,7 @@ public class ventana_proveedor extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Organice Beauty - Proovedor");
+        setResizable(false);
     }
 
     /**

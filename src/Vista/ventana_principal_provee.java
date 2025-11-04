@@ -17,6 +17,8 @@ public class ventana_principal_provee extends javax.swing.JFrame {
         initComponents();
         setLocationRelativeTo(null);
         setTitle("Organice Beauty - Panel Proovedor");
+        setResizable(false);
+
     }
 
     /**
@@ -32,7 +34,7 @@ public class ventana_principal_provee extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
         consultar = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        actualizar = new javax.swing.JButton();
         btncerrar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -55,8 +57,13 @@ public class ventana_principal_provee extends javax.swing.JFrame {
             }
         });
 
-        jButton3.setBackground(new java.awt.Color(0, 153, 255));
-        jButton3.setText("Actualizar los datos del proveedor");
+        actualizar.setBackground(new java.awt.Color(0, 153, 255));
+        actualizar.setText("Actualizar los datos del proveedor");
+        actualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actualizarActionPerformed(evt);
+            }
+        });
 
         btncerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/back.png"))); // NOI18N
         btncerrar.addActionListener(new java.awt.event.ActionListener() {
@@ -73,7 +80,7 @@ public class ventana_principal_provee extends javax.swing.JFrame {
                 .addGap(29, 29, 29)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButton3)
+                        .addComponent(actualizar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 197, Short.MAX_VALUE)
                         .addComponent(btncerrar)
                         .addGap(41, 41, 41))
@@ -93,7 +100,7 @@ public class ventana_principal_provee extends javax.swing.JFrame {
                         .addGap(38, 38, 38)
                         .addComponent(consultar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 50, Short.MAX_VALUE)
-                        .addComponent(jButton3))
+                        .addComponent(actualizar))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btncerrar)))
@@ -134,6 +141,13 @@ public class ventana_principal_provee extends javax.swing.JFrame {
          });
     }//GEN-LAST:event_consultarActionPerformed
 
+    private void actualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarActionPerformed
+        actualizar.addActionListener(e -> {
+            new ventana_actualizar_provee().setVisible(true);
+            this.dispose();
+         });
+    }//GEN-LAST:event_actualizarActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -170,10 +184,10 @@ public class ventana_principal_provee extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton actualizar;
     private javax.swing.JButton btncerrar;
     private javax.swing.JButton consultar;
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton3;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JTabbedPane jTabbedPane1;
     // End of variables declaration//GEN-END:variables
