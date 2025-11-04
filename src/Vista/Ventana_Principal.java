@@ -56,16 +56,31 @@ public class Ventana_Principal extends javax.swing.JFrame {
         btnCliente.setBackground(new java.awt.Color(255, 153, 255));
         btnCliente.setFont(new java.awt.Font("Sans Serif Collection", 1, 12)); // NOI18N
         btnCliente.setText("Cliente");
+        btnCliente.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnClienteMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnCliente, new org.netbeans.lib.awtextra.AbsoluteConstraints(219, 263, -1, -1));
 
         btnProveedor.setBackground(new java.awt.Color(255, 153, 255));
         btnProveedor.setFont(new java.awt.Font("Sans Serif Collection", 1, 12)); // NOI18N
         btnProveedor.setText("Proveedor");
+        btnProveedor.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnProveedorMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnProveedor, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 225, -1, -1));
 
         btnAdministrador.setBackground(new java.awt.Color(255, 153, 255));
         btnAdministrador.setFont(new java.awt.Font("Sans Serif Collection", 1, 12)); // NOI18N
         btnAdministrador.setText("Administrador");
+        btnAdministrador.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnAdministradorMouseClicked(evt);
+            }
+        });
         jPanel1.add(btnAdministrador, new org.netbeans.lib.awtextra.AbsoluteConstraints(373, 283, -1, -1));
 
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/org.png"))); // NOI18N
@@ -84,6 +99,30 @@ public class Ventana_Principal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnProveedorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnProveedorMouseClicked
+        // TODO add your handling code here:
+        btnProveedor.addActionListener(e -> {
+            new ventana_proveedor().setVisible(true);
+            this.dispose();
+        });
+    }//GEN-LAST:event_btnProveedorMouseClicked
+
+    private void btnClienteMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnClienteMouseClicked
+        // TODO add your handling code here:
+        btnCliente.addActionListener(e -> {
+            new ventana_cliente().setVisible(true);
+            this.dispose();
+        });
+    }//GEN-LAST:event_btnClienteMouseClicked
+
+    private void btnAdministradorMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnAdministradorMouseClicked
+        // TODO add your handling code here:
+        btnAdministrador.addActionListener(e -> {
+            new ventana_administrador().setVisible(true);
+            this.dispose();
+        });
+    }//GEN-LAST:event_btnAdministradorMouseClicked
 
     
     /**
@@ -122,6 +161,7 @@ public class Ventana_Principal extends javax.swing.JFrame {
                 new Ventana_Principal().setVisible(true);
             }
         });
+        
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

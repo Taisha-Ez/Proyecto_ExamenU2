@@ -6,17 +6,15 @@ package Vista;
 
 /**
  *
- * @author Andrea RG
+ * @author natal
  */
-public class ventana_principal_productos extends javax.swing.JFrame {
+public class Ventana_Cliente_promociones extends javax.swing.JFrame {
 
     /**
-     * Creates new form ventana_principal_productos
+     * Creates new form Ventana_Cliente_promociones
      */
-    public ventana_principal_productos() {
+    public Ventana_Cliente_promociones() {
         initComponents();
-        setLocationRelativeTo(null);
-        setTitle("Gestión de Productos - Organice Beauty");
     }
 
     /**
@@ -33,23 +31,26 @@ public class ventana_principal_productos extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("jLabel1");
+        jPanel1.setBackground(new java.awt.Color(255, 204, 204));
+
+        jLabel1.setFont(new java.awt.Font("Rockwell Extra Bold", 2, 18)); // NOI18N
+        jLabel1.setText("PROMOCIONES");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(195, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(168, 168, 168))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(89, 89, 89)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(133, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(126, 126, 126)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addContainerGap(158, Short.MAX_VALUE))
+                .addContainerGap(259, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -83,20 +84,20 @@ public class ventana_principal_productos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(ventana_principal_productos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_Cliente_promociones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(ventana_principal_productos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_Cliente_promociones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(ventana_principal_productos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_Cliente_promociones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(ventana_principal_productos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(Ventana_Cliente_promociones.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new ventana_principal_productos().setVisible(true);
+                new Ventana_Cliente_promociones().setVisible(true);
             }
         });
     }

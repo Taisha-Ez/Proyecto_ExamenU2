@@ -73,6 +73,11 @@ public class ventana_administrador extends javax.swing.JFrame {
         jPanel1.add(btnreturn, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 255, -1, -1));
 
         btnlogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/check.png"))); // NOI18N
+        btnlogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnloginActionPerformed(evt);
+            }
+        });
         jPanel1.add(btnlogin, new org.netbeans.lib.awtextra.AbsoluteConstraints(162, 180, -1, -1));
 
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/admin.png"))); // NOI18N
@@ -91,6 +96,21 @@ public class ventana_administrador extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
+        // TODO add your handling code here:
+        btnlogin.addActionListener(e -> {
+            String usuario = txtusuario.getText();
+            String contrasena = new String(txtcontrasena.getPassword());
+            if (usuario.equalsIgnoreCase("admin") && contrasena.equals("1234")) {
+                JOptionPane.showMessageDialog(this, "Bienvenido, Administrador.");
+                new ventana_principal_admin().setVisible(true);
+                this.dispose();
+            } else {
+                JOptionPane.showMessageDialog(this, "Usuario o contraseña incorrectos.", "Error", JOptionPane.ERROR_MESSAGE);
+            }
+        });
+    }//GEN-LAST:event_btnloginActionPerformed
 
     /**
      * @param args the command line arguments
