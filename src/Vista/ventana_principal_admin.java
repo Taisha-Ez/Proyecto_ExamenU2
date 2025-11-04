@@ -212,7 +212,7 @@ public class ventana_principal_admin extends javax.swing.JFrame {
     private void btnproveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnproveedoresActionPerformed
         // TODO add your handling code here:
         btnproveedores.addActionListener(e -> {
-        new ventana_principal_proveedores().setVisible(true);
+        new ventana_principal_provee().setVisible(true);
         this.dispose();
 });
     }//GEN-LAST:event_btnproveedoresActionPerformed
